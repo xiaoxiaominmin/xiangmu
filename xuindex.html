@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>春秋旅游</title>
+	<link rel="stylesheet" href="xucss/font-awesome.min.css">
+	<link rel="stylesheet" href="xucss/lunbo.css">
+	<link rel="stylesheet" href="xucss/style.css">
+	<style>
+      .swiper-container {
+        width: 100%;
+      } 
+      .swiper-container img {
+        display: block;
+        width: 100%;
+       height: 1.6rem;
+      }
+    </style>
+</head>
+<body ng-controller="ctr">
+	<div class="xucontain">
+	<!-- 头部 -->
+		<header class="header">
+		<h1 data-opction="0" id="h1"></h1>
+			<a href="shanghai.html">上海 V</a>
+			<p><span class="fa fa-search"></span>
+				<input type="text" placeholder="目的地/景点/酒店/门票">
+			</p>
+			<a href="#" class="fa fa-camera"></a>
+		</header>
+	<!-- 主体 -->
+		<section class="xumain" id="main_scroll">
+
+			<div class="title swiper-container">
+		      <!-- Additional required wrapper -->
+			      <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide"><img src="./images/xuimg1.png" /></div>
+			        <div class="swiper-slide"><img src="./images/xuimgtit1.png" /></div>
+			        <div class="swiper-slide"><img src="./images/xuimgtit2.png" /></div>
+			         <div class="swiper-slide"><img src="./images/xuimgtit3.png" /></div>
+			      </div>
+			      <!-- If we need pagination -->
+			      <div class="swiper-pagination"></div>
+		    </div>
+			
+			<div class="info">
+				<dl ng-repeat="key in infos.info" >
+					<dt><img ng-src="images/{{  key.img  }}"></dt>
+					<dd>{{ key.text }}</dd>
+				</dl>
+			</div>
+			<div class="manu">
+				<ul>
+					<li  ng-repeat="key in infos.manu">
+						<span><img ng-attr-src="images/{{key.img}}"></span>
+						<small>{{ key.text }}</small>
+					</li>
+				</ul>
+			</div>
+			<p></p>
+			<div class="side">
+				<div class="left">
+					<h3>
+						<span>限时抢购</span>
+						<time><img src="images/xuimg111.png"></time>
+						<small><a href="#">08</a>:<a href="#">34</a>:<a href="#">01</a></small>
+					</h3>
+					<dl>
+						<dt><img src="images/xuimg9.png"></dt>
+						<dd>[市区酒店]北海双方4自由行(3晚入住新皇都大酒店)</dd>
+					</dl>
+				</div>
+				<div class="right">
+					<dl>
+						<dt><img src="images/xuimg11.png"></dt>
+						<dd>尾单/说走就走</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/xuimg11.png"></dt>
+						<dd>移动专享</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="chun">
+				<ul>
+					<li><img src="images/xuimg112.png"><i><span>春小秋</span> <b>发话</b></i></li>
+					<li><img src="images/xuimg113.png"><b>[农行专区]立减666元/单</b></li>
+				</ul>
+			</div>
+			<div class="img">
+				<ul>
+					<li ng-repeat="key in infos.pics">
+						<img ng-src="images/{{ key.img }}">
+					</li>
+				</ul>
+			</div>
+			<div class="content" id="content_scroll">
+			<div id="pp">
+				<nav class="nav">
+					<li class="on" data-value="0">精选自由行</li>
+					<li>特惠跟团游</li>
+				</nav>
+				<div class="pos">
+					<div>
+						<div class="picture" ng-repeat="key in infos.sceneryPicture">
+							 <dl>
+								<dt><img ng-src="{{ key.img }}"></dt>
+								<dd>
+									<small>{{ key.title }}</small>
+									<span>
+										<b>{{ key.price }}</b>
+										<time>{{ key.primeCost }}</time>
+									</span>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+	<!-- 页脚 -->
+		<footer class="footer">
+			<a href="#" id="shouye" class="on"><span></span><small>首页</small></a>
+			<a href="#" id="mudidi"><span></span><small>目的地</small></a>
+			<a href="#" id="lianxi"><span></span><small>联系我们</small></a>
+			<a href="#" id="wode"><span></span><small>我的春秋</small></a>
+		</footer>
+	</div>
+
+<script src="xujs/setfontsize.js"></script>
+<script src="xujs/angular.min.js"></script>
+<script src="xujs/zepto.min.js"></script>
+<script src="xujs/info.js"></script>
+<script src="xujs/jquery-2.1.4.js"></script>
+<script src="xujs/jquery-weui.js"></script>
+<script src="xujs/swiper.js"></script>
+<script>
+//点击shouye的样式 
+   $("#shouye").on("click",function(){
+   	   
+	  	   $(this).addClass("on").siblings().removeClass("on");
+	       $(this).find("span").css({"background-position":"0px -20px"}).parent().siblings().find("span").css({"background-position":"0px  0px"});
+
+	}) 
+//点击目的地的样式  
+  $("#mudidi").on("click",function(){
+  	   $(this).addClass("on").siblings().removeClass("on");
+       $(this).find("span").css({"background-position":"0px -20px"}).parent().siblings().find("span").css({"background-position":"0px  0px"});
+   }) 
+//点击联系我们的样式  
+   $("#lianxi").on("click",function(){
+  	   $(this).addClass("on").siblings().removeClass("on");
+       $(this).find("span").css({"background-position":"0px -20px"}).parent().siblings().find("span").css({"background-position":"0px  0px"});
+    }) 
+//点击我的春秋的样式  
+	$("#wode").on("click",function(){
+	  	   $(this).addClass("on").siblings().removeClass("on");
+	       $(this).find("span").css({"background-position":"0px -20px"}).parent().siblings().find("span").css({"background-position":"0px  0px"});
+	  })
+
+
+	 $(".swiper-container").swiper({
+    	loop: true, //将true改为false时 不是无缝滚动  用于无限循环切换
+    	 autoplayDisableOnInteraction: false,
+    	autoplay: 1000  //控制自动播放的时间
+  	});
+
+</script>
+</body>
+</html>

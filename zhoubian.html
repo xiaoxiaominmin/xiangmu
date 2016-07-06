@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>春秋旅游</title>
+	<link rel="stylesheet" href="xucss/font-awesome.min.css">
+	<link rel="stylesheet" href="xucss/style.css">
+</head>
+<body ng-controller="ctr">
+	<div class="contain">
+		<header class="menheader">
+			<a href="xuindex.html"> < </a>
+			<h3>周边游</h3>
+		</header>
+		<section class="men_main">
+			<div class="info">
+				<dl ng-repeat="key in infos.zhoubiannav">
+					<dt><img ng-src="images/{{  key.img  }}"></dt>
+					<dd>{{ key.text }}</dd>
+				</dl>
+			</div>
+			<div class="guonie">
+				
+				<div class="img">
+					<ul>
+						<li ng-repeat="key in infos.menpiaopics">
+							<img ng-src="images/{{ key.img }}">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="picture">
+				<nav id="menpiaonav">
+					<li class="on">酒+景</li>
+					<li>团队游</li>
+				</nav>
+				<div class="pict" ng-repeat="key in infos.menpiaopict">
+					<dl>
+						<dt><img ng-src="images/{{ key.img  }}" alt=""></dt>
+						<dd>
+							<p><span>{{  key.span }}</span><b>{{  key.b }}</b></p>
+							<small>{{  key.small }}</small>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+	</div>
+<script src="xujs/setfontsize.js"></script>
+<script src="xujs/angular.min.js"></script>
+<script src="xujs/zepto.min.js"></script>
+<script src="xujs/info.js"></script>	
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+	"info":[
+			{"img":"xuimg2.png","text":"出境"},
+			{"img":"xuimg3.png","text":"国内"},
+			{"img":"xuimg4.png","text":"机票"},
+			{"img":"xuimg5.png","text":"油轮"}
+	],
+	"manu":[
+			{"img":"xuimg6.png","text":"周边"},
+			{"img":"xuimg7.png","text":" 门票玩乐"},
+			{"img":"xuimg8.png","text":"自驾"}
+	],
+	"pics":[
+			{"img":"xuimg12.png"},
+			{"img":"xuimg13.png"},
+			{"img":"xuimg14.png"},
+			{"img":"xuimg15.png"},
+			{"img":"xuimg16.png"},
+			{"img":"xuimg17.png"},
+			{"img":"xuimg18.png"},
+			{"img":"xuimg19.png"}
+	],
+	"sceneryPicture":[
+			{"img":"images/xuimg121.png","title":"暑假爆款7.16歌诗达赛琳娜号--上海、济州、仁川、上海5日4晚","price":"￥2399起","primeCost":"原价￥3699"},
+			{"img":"images/xuimg122.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥799起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg88.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥798起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg66.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包，送完即止)","price":"￥797起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg77.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥796起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg126.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥795起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg99.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥795起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg121.png","title":"暑假爆款7.16歌诗达赛琳娜号--上海、济州、仁川、上海5日4晚","price":"￥2399起","primeCost":"原价￥3699"},
+			{"img":"images/xuimg122.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥799起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg88.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥798起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg66.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥797起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg77.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥796起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg126.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥795起","primeCost":"原价￥1699"},
+			{"img":"images/xuimg99.png","title":"欢庆回归|香港4日自由行|(含上海香港往返含税机票+超值礼包,送完即止)","price":"￥795起","primeCost":"原价￥1699"}
+	],
+	"city":{
+			"name":
+			["重庆","南京","杭州","桂林","昆明","青岛","广州","福州","沈阳","大连","天津","成都","烟台","深圳","上海","哈尔滨","西安","厦门","石家庄","武汉","珠海","银川","呼和浩特","汕头","怀化","常德","香港","长白山","合肥","东营","宁波"]
+	},
+	"menpiaoinfo":[
+			{"img":"3img2.png","text":"通讯Wifi"},
+			{"img":"3img3.png","text":"门票卡卷"},
+			{"img":"3img4.png","text":"一日游乐"},
+			{"img":"3img3.png","text":"接送用车"}
+	],
+	"menpiaopics":[
+			{"img":"xuimg12.png"},
+			{"img":"xuimg13.png"},
+			{"img":"xuimg14.png"},
+			{"img":"xuimg15.png"},
+			{"img":"xuimg16.png"},
+			{"img":"xuimg19.png"}
+	],
+	"menpiaopict":[
+		{"img":"3img11.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img12.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img13.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img14.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img11.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img12.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img13.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img14.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		},{"img":"3img11.png","span":"其他","b":"长白山王天鹅湖超扣按一日游",	"small":"长白山"
+		}
+	],
+	"zhoubiannav":[
+		{"img":"4img1.png","text":"度假"},
+		{"img":"4img2.png","text":"乐圈"},
+		{"img":"4img3.png","text":"古镇"},
+		{"img":"4img4.png","text":"酒店"}
+	]
+}

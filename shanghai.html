@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>春秋旅游</title>
+	<link rel="stylesheet" href="xucss/style.css">
+</head>
+<body ng-controller="ctr">
+	<div class="contain">
+		<header class="xuheader">
+			<a href="xuindex.html"><</a>
+			<h3>选择城市</h3>
+		</header>
+		<section class="xmain">
+			<h4>当前位置</h4>
+			<p>定位失败请开启手机定位</p>
+			<div class="city">
+				<h4>热门城市</h4>
+				<ul>
+					 <li ng-repeat="key in infos.city.name">{{ key }}</li> 
+				</ul>
+			</div>
+		</section>
+	</div>
+
+<script src="xujs/setfontsize.js"></script>
+<script src="xujs/angular.min.js"></script>
+<script src="xujs/zepto.min.js"></script>
+<script src="xujs/info.js"></script>
+</body>
+</html>

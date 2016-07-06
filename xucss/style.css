@@ -1,0 +1,670 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+
+@font-face {
+  font-family: "raphaelicons";
+  src: url(fonts/raphaelicons-webfont.eot);
+  src: url(fonts/raphaelicons-webfont.ttf) format("truetype"), url(fonts/raphaelicons-webfont.svg) format("svg"), url(fonts/raphaelicons-webfont.woff) format("woff"); }
+.contain, .xucontain {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/*.................头部..................*/
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 55;
+  height: 0.4rem;
+  /* background:#33cc98; */ }
+  .header h1 {
+    width: 100%;
+    height: 100%;
+    background: #33cc98;
+    opacity: 0;
+    position: absolute; }
+  .header a {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px; }
+    .header a:nth-of-type(1) {
+      left: 10px;
+      color: #fff;
+      font-size: 14px; }
+    .header a:nth-of-type(2) {
+      right: 10px;
+      color: #fff; }
+  .header p {
+    width: 70%;
+    margin: 0 18%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    height: 0.25rem;
+    border-radius: 15px;
+    margin-top: 0.1rem;
+    z-index: 2; }
+    .header p span {
+      position: absolute;
+      left: 0.1rem;
+      color: #fff;
+      top: 50%;
+      margin-top: -10px; }
+    .header p input::-webkit-input-placeholder {
+      color: #fff; }
+    .header p input {
+      margin-left: 0.3rem;
+      border: none;
+      outline: none;
+      color: #fff;
+      line-height: 0.25rem;
+      background: none;
+      z-index: 55; }
+
+.xuheader {
+  width: 100%;
+  height: 0.4rem;
+  position: relative; }
+  .xuheader a {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.1rem;
+    left: 10px;
+    color: #008857;
+    font-weight: 600;
+    font-size: 18px; }
+  .xuheader h3 {
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 16px;
+    color: #008857; }
+
+/*.................主体..................*/
+.xumain {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  overflow-y: scroll;
+  margin-top: 0.5px;
+  position: relative;
+  /*......图片轮播.......*/
+  /*......出境.......*/
+  /*......周边.......*/
+  /*......限时抢购.......*/
+  /*......春小秋.......*/
+  /*......迪士尼童话城堡.......*/
+  /*......导航定位.......*/ }
+  .xumain .title {
+    width: 100%;
+    height: 1.6rem;
+    position: relative;
+    overflow: hidden; }
+    .xumain .title .pics {
+      width: 100%;
+      height: 1.6rem;
+      display: -webkit-box; }
+      .xumain .title .pics li {
+        width: 100%;
+        height: 100%; }
+        .xumain .title .pics li img {
+          width: 100%;
+          height: auto; }
+    .xumain .title ul {
+      position: absolute;
+      right: 2%;
+      bottom: 9%; }
+      .xumain .title ul li {
+        float: left;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #fff;
+        margin-left: 7px; }
+      .xumain .title ul .on {
+        background: #ed5858; }
+  .xumain .info {
+    width: 100%;
+    height: 1rem; }
+    .xumain .info dl {
+      width: 25%;
+      height: 100%;
+      float: left; }
+      .xumain .info dl dt {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0.1rem auto; }
+        .xumain .info dl dt img {
+          width: 100%;
+          height: 100%; }
+      .xumain .info dl dd {
+        text-align: center;
+        font-size: 14px; }
+  .xumain .manu {
+    width: 100%;
+    height: 0.4rem; }
+    .xumain .manu ul {
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0; }
+      .xumain .manu ul li {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+        border-right: 1px solid #b0b0b0;
+        text-align: center;
+        line-height: 0.4rem;
+        position: relative; }
+        .xumain .manu ul li span {
+          width: 0.4rem;
+          height: 0.19rem;
+          position: absolute;
+          left: 5px;
+          top: 50%;
+          margin-top: -0.15rem;
+          margin-left: 5%; }
+          .xumain .manu ul li span img {
+            width: 0.2rem;
+            height: 0.19rem;
+            margin: 0 auto; }
+        .xumain .manu ul li:last-child {
+          border: none; }
+        .xumain .manu ul li #small {
+          width: 0.01rem; }
+  .xumain p {
+    width: 100%;
+    height: 0.17rem;
+    background: #ededed; }
+  .xumain .side {
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 1px solid #b0b0b0;
+    display: -webkit-flex; }
+    .xumain .side .left {
+      width: 50%;
+      height: 100%;
+      border-right: 1px solid #ccc; }
+      .xumain .side .left h3 {
+        width: 90%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0 5%; }
+        .xumain .side .left h3 span {
+          font-size: 14px;
+          color: #fc0a25;
+          width: 40%;
+          display: inline-block;
+          float: left; }
+        .xumain .side .left h3 time {
+          width: 0.22rem;
+          height: 0.18rem;
+          display: inline-block;
+          float: left;
+          margin: 8px 2px; }
+          .xumain .side .left h3 time img {
+            height: 0.18rem;
+            width: 0.18rem;
+            float: left;
+            margin: 3px 2px; }
+        .xumain .side .left h3 small {
+          float: left;
+          color: #fc0a25;
+          width: 40%;
+          display: inline-block; }
+          .xumain .side .left h3 small a {
+            background: #eed0c8;
+            padding: 4px 2px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fc0a25;
+            font-size: 12px; }
+      .xumain .side .left dl {
+        width: 90%;
+        height: 1.1rem;
+        margin: 0 5%; }
+        .xumain .side .left dl dt {
+          width: 1.5rem;
+          height: 0.665rem;
+          margin: 0 auto; }
+          .xumain .side .left dl dt img {
+            width: 1.5rem;
+            height: 0.665rem; }
+        .xumain .side .left dl dd {
+          font-size: 12px;
+          line-height: 0.2rem;
+          text-align: center; }
+    .xumain .side .right {
+      width: 50%;
+      height: 100%;
+      background: pink; }
+      .xumain .side .right dl {
+        width: 100%;
+        height: 50%;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+        position: relative; }
+        .xumain .side .right dl dt {
+          width: 1.025rem;
+          height: 0.465rem;
+          position: absolute;
+          right: 0.1rem;
+          bottom: 0; }
+          .xumain .side .right dl dt img {
+            width: 1.025rem;
+            height: 0.465rem; }
+        .xumain .side .right dl dd {
+          font-size: 14px;
+          text-indent: 10px;
+          line-height: 0.4rem;
+          color: #3c97d2;
+          font-weight: 600; }
+        .xumain .side .right dl:last-child dd {
+          color: #94b23c; }
+  .xumain .chun {
+    width: 100%;
+    height: 0.4rem;
+    border-bottom: 1px solid #ccc; }
+    .xumain .chun ul {
+      width: 100%;
+      height: 0.3rem;
+      margin: 0.1rem 0;
+      display: -webkit-flex; }
+      .xumain .chun ul li {
+        position: relative; }
+        .xumain .chun ul li:nth-of-type(1) {
+          width: 40%;
+          border-right: 1px solid #ccc; }
+          .xumain .chun ul li:nth-of-type(1) img {
+            width: 0.27rem;
+            height: auto;
+            margin-left: 0.1rem; }
+          .xumain .chun ul li:nth-of-type(1) i {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px; }
+            .xumain .chun ul li:nth-of-type(1) i span {
+              color: #1cbc67;
+              font-size: 16px;
+              font-weight: 800; }
+            .xumain .chun ul li:nth-of-type(1) i b {
+              background: #ff7e00;
+              font-size: 16px;
+              color: #fff;
+              padding: 2px;
+              margin-left: -3px; }
+        .xumain .chun ul li:nth-of-type(2) {
+          -webkit-flex-grow: 1;
+          margin-left: 5px;
+          line-height: 0.3rem; }
+          .xumain .chun ul li:nth-of-type(2) img {
+            width: 0.2rem;
+            height: auto; }
+          .xumain .chun ul li:nth-of-type(2) b {
+            font-size: 14px;
+            margin-left: 5px;
+            top: 50%;
+            margin-top: -0.182rem;
+            position: absolute; }
+  .xumain .img {
+    width: 100%;
+    height: 1.9rem;
+    background: #f7eef3; }
+    .xumain .img ul {
+      width: 98%;
+      margin: 1% 0; }
+      .xumain .img ul li {
+        width: 24%;
+        margin-left: 1%;
+        float: left; }
+        .xumain .img ul li img {
+          width: 0.885rem;
+          height: 0.885rem;
+          margin-bottom: 1%;
+          margin: 0 auto; }
+  .xumain .content {
+    width: 100%;
+    background: #eaeef1;
+    position: absolute;
+    /*......导航.......*/
+    /*......图片.......*/ }
+    .xumain .content #pp {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      -webkit-flex-direction: column; }
+    .xumain .content nav {
+      width: 100%;
+      height: 0.425rem;
+      background: #fff;
+      line-height: 0.425rem; }
+      .xumain .content nav li {
+        width: 50%;
+        float: left;
+        text-align: center; }
+        .xumain .content nav li.on {
+          color: #35a668;
+          border-bottom: 2px solid #35a668; }
+    .xumain .content .pos .picture {
+      width: 96%;
+      height: 2.5rem;
+      background: #fff;
+      margin: 2%; }
+      .xumain .content .pos .picture dl {
+        width: 100%; }
+        .xumain .content .pos .picture dl dt {
+          width: 3.62rem;
+          height: 2rem; }
+          .xumain .content .pos .picture dl dt img {
+            width: 3.62rem;
+            height: 2rem; }
+        .xumain .content .pos .picture dl dd {
+          width: 100%;
+          line-height: 0.22rem;
+          margin-top: 0.05rem; }
+          .xumain .content .pos .picture dl dd small {
+            width: 76%;
+            float: left;
+            padding-left: 3%; }
+          .xumain .content .pos .picture dl dd span {
+            float: right;
+            padding-right: 0.05rem; }
+            .xumain .content .pos .picture dl dd span b {
+              color: #ff3553;
+              display: block;
+              font-size: 16px; }
+            .xumain .content .pos .picture dl dd span time {
+              font-size: 12px;
+              text-decoration: line-through;
+              color: #ccc; }
+
+.xmain {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  overflow-y: scroll; }
+  .xmain h4 {
+    width: 100%;
+    height: 0.35rem;
+    background: #e9e9e9;
+    line-height: 0.35rem;
+    padding-left: 0.15rem;
+    font-size: 16px;
+    border-top: 1px solid #ccc; }
+  .xmain p {
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 14px;
+    padding-left: 0.15rem; }
+  .xmain ul {
+    width: 100%; }
+    .xmain ul li {
+      width: 100%;
+      padding-left: 0.15rem;
+      line-height: 0.5rem;
+      border-bottom: 1px solid #ccc; }
+
+/*.................页脚..................*/
+.footer {
+  width: 100%;
+  height: 0.5rem;
+  background: #f7f7f7; }
+  .footer a {
+    width: 25%;
+    height: 0.5rem;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 0.08rem;
+    color: #9b9b9b; }
+    .footer a span {
+      display: block;
+      margin: 0 auto;
+      width: 20px;
+      height: 0.2rem; }
+    .footer a.on {
+      border-top: 1px solid #ed5858; }
+      .footer a.on small {
+        color: #50cb8a; }
+    .footer a:nth-of-type(1) span {
+      background: url(../images/xufoot1.png) no-repeat;
+      background-size: 20px 40px; }
+    .footer a:nth-of-type(2) span {
+      background: url(../images/xufoot2.png) no-repeat;
+      background-size: 20px 40px; }
+    .footer a:nth-of-type(3) span {
+      background: url(../images/xufoot3.png) no-repeat;
+      background-size: 20px 40px; }
+    .footer a:nth-of-type(4) span {
+      background: url(../images/xufoot4.png) no-repeat;
+      background-size: 20px 40px; }
+
+/*.................门票头部..................*/
+.menheader {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  position: relative; }
+  .menheader a {
+    position: absolute;
+    top: 50%;
+    color: #3c8c6e; }
+    .menheader a:nth-of-type(1) {
+      left: 0.1rem;
+      margin-top: -18px;
+      font-weight: 600;
+      font-size: 22px; }
+    .menheader a:nth-of-type(2) {
+      right: 0.1rem;
+      margin-top: -10px;
+      font-weight: 100;
+      font-size: 20px; }
+  .menheader h3 {
+    color: #3c8c6e;
+    text-align: center;
+    padding: 0 30px; }
+
+/*.................门票主体..................*/
+.men_main {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  overflow-y: scroll;
+  margin-top: 0.5px;
+  position: relative;
+  /*......图片轮播.......*/
+  /*......出境.......*/
+  /*......出境.......*/
+  /*......导航.......*/
+  /*......迪士尼童话城堡.......*/
+  /*............图片............*/ }
+  .men_main .title {
+    width: 100%;
+    height: 1.6rem;
+    position: relative;
+    overflow: hidden; }
+    .men_main .title .pics {
+      width: 100%;
+      height: 1.6rem;
+      display: -webkit-box; }
+      .men_main .title .pics li {
+        width: 100%;
+        height: 100%; }
+        .men_main .title .pics li img {
+          width: 100%;
+          height: auto; }
+    .men_main .title ul {
+      position: absolute;
+      right: 3%;
+      bottom: 9%; }
+      .men_main .title ul li {
+        float: left;
+        width: 15px;
+        height: 5px;
+        border-radius: 35%;
+        background: #fff;
+        margin-left: 7px; }
+      .men_main .title ul .on {
+        background: green; }
+  .men_main .info {
+    width: 100%;
+    height: 1rem; }
+    .men_main .info dl {
+      width: 25%;
+      height: 100%;
+      float: left; }
+      .men_main .info dl dt {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0.1rem auto; }
+        .men_main .info dl dt img {
+          width: 100%;
+          height: 100%; }
+      .men_main .info dl dd {
+        text-align: center;
+        font-size: 14px; }
+  .men_main .shanghai {
+    width: 100%;
+    height: 1.45rem;
+    border-top: 0.1rem solid #f2f2f2;
+    border-bottom: 0.1rem solid #f2f2f2; }
+    .men_main .shanghai dl {
+      width: 100%;
+      height: 0.7rem;
+      padding-left: 15px;
+      border-bottom: 1px solid #f2f2f2;
+      display: -webkit-flex; }
+      .men_main .shanghai dl dt {
+        width: 0.94rem;
+        height: 0.63rem;
+        margin: 0.05rem; }
+        .men_main .shanghai dl dt img {
+          width: 100%;
+          height: 100%; }
+      .men_main .shanghai dl dd {
+        -webkit-flex-grow: 1;
+        padding-left: 0.2rem;
+        line-height: 22px; }
+        .men_main .shanghai dl dd span {
+          display: block;
+          margin-top: 0.1rem;
+          font-size: 14px; }
+    .men_main .shanghai ul {
+      width: 100%;
+      display: -webkit-flex;
+      height: 0.6rem; }
+      .men_main .shanghai ul li {
+        width: 50%;
+        float: left;
+        border-right: 1px solid #ccc;
+        margin: 0.1rem 0;
+        margin-left: 0.2rem;
+        text-indent: 0.5rem; }
+        .men_main .shanghai ul li:nth-of-type(1) {
+          background: url(../images/3img6.png) no-repeat left center;
+          background-size: 0.4rem 0.4rem; }
+        .men_main .shanghai ul li:nth-of-type(2) {
+          background: url(../images/3img7.png) no-repeat left center;
+          background-size: 0.4rem 0.4rem; }
+        .men_main .shanghai ul li span {
+          display: block;
+          font-size: 14px;
+          line-height: 0.2rem; }
+        .men_main .shanghai ul li small {
+          display: block; }
+  .men_main nav {
+    width: 100%;
+    height: 0.425rem;
+    background: #fff;
+    line-height: 0.425rem; }
+    .men_main nav li {
+      width: 50%;
+      float: left;
+      text-align: center; }
+      .men_main nav li.on {
+        color: #35a668;
+        border-bottom: 2px solid #35a668; }
+  .men_main .img {
+    width: 100%;
+    height: 1.6rem;
+    background: #f7eef3; }
+    .men_main .img ul {
+      width: 98%;
+      margin: 2% 1%; }
+      .men_main .img ul li {
+        width: 32%;
+        margin-left: 1.2%;
+        float: left; }
+        .men_main .img ul li img {
+          width: 1.125rem;
+          height: 0.765rem;
+          margin-bottom: 1%;
+          margin: 0 auto; }
+  .men_main .pict {
+    width: 100%;
+    height: 1.1rem;
+    border-bottom: 1px solid #ccc; }
+    .men_main .pict dl {
+      width: 100%;
+      height: 1.1rem;
+      margin: 0.1rem;
+      display: -webkit-flex; }
+      .men_main .pict dl dt {
+        width: 35%;
+        height: 100%; }
+        .men_main .pict dl dt img {
+          width: 1.2rem;
+          height: 0.84rem; }
+      .men_main .pict dl dd {
+        -webkit-flex-grow: 1;
+        margin-top: 10px; }
+        .men_main .pict dl dd span {
+          background: #ff9c10;
+          color: #fff;
+          padding: 2px 5px;
+          font-size: 14px; }
+        .men_main .pict dl dd b {
+          font-weight: 100;
+          font-size: 14px; }
+        .men_main .pict dl dd small {
+          margin-top: 0.3rem;
+          display: block; }
+
+/*.................出境游网页..................*/
+.xumain4 {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-flex-grow: 1; }
+  .xumain4 .info {
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.35rem;
+    text-indent: 0.2rem;
+    border-top: 0.05rem solid #f2f2f2;
+    border-bottom: 0.05rem solid #f2f2f2; }
+    .xumain4 .info b {
+      font-size: 16px;
+      padding-right: 15px; }
+    .xumain4 .info span {
+      font-size: 14px; }
+  .xumain4 .love {
+    width: 100%;
+    height: 1.3rem; }

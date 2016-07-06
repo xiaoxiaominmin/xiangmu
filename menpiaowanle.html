@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>春秋旅游</title>
+	<link rel="stylesheet" href="xucss/font-awesome.min.css">
+	<link rel="stylesheet" href="xucss/lunbo.css">
+	<link rel="stylesheet" href="xucss/style.css">
+	<style>
+      .swiper-container {
+        width: 100%;
+      } 
+      .swiper-container img {
+        display: block;
+        width: 100%;
+       height: 1.6rem;
+      }
+    </style>
+</head>
+<body ng-controller="ctr">
+	<div class="contain">
+		<header class="menheader">
+			<a href="xuindex.html"> < </a>
+			<h3>门票</h3>
+			<a href="#" class="fa fa-search"></a>
+		</header>
+		<section class="men_main">
+			<div class="swiper-container">
+		      <!-- Additional required wrapper -->
+			      <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide"><img src="./images/3img1.png" /></div>
+			        <div class="swiper-slide"><img src="./images/3img1.png" /></div>
+			        <div class="swiper-slide"><img src="./images/3img1.png" /></div>
+			         <div class="swiper-slide"><img src="./images/3img1.png" /></div>
+			      </div>
+			      <!-- If we need pagination -->
+			      <div class="swiper-pagination"></div>
+		    </div>
+			<div class="info">
+				<dl ng-repeat="key in infos.menpiaoinfo">
+					<dt><img ng-src="images/{{  key.img  }}"></dt>
+					<dd>{{ key.text }}</dd>
+				</dl>
+			</div>
+			<div class="shanghai">
+				<dl>
+					<dt><img src="images/3img5.png" alt=""></dt>
+					<dd>
+						<span>泰完美</span>
+						<small>泰国</small>
+					</dd>
+				</dl>
+				<ul>
+					<li><span>大上海</span><small>上海</small></li>
+					<li><span>情定三亚</span><small>三亚</small></li>
+				</ul>
+			</div>
+			<div class="guonie">
+				<nav id="menpiaonav">
+					<li class="on">游遍国内</li>
+					<li>玩转海外</li>
+				</nav>
+				<div class="img">
+					<ul>
+						<li ng-repeat="key in infos.menpiaopics">
+							<img ng-src="images/{{ key.img }}">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="picture">
+				<div class="pict" ng-repeat="key in infos.menpiaopict">
+					<dl>
+						<dt><img ng-src="images/{{ key.img  }}" alt=""></dt>
+						<dd>
+							<p><span>{{  key.span }}</span><b>{{  key.b }}</b></p>
+							<small>{{  key.small }}</small>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+	</div>
+<script src="xujs/setfontsize.js"></script>
+<script src="xujs/angular.min.js"></script>
+<script src="xujs/zepto.min.js"></script>
+<script src="xujs/info.js"></script>	
+<script src="xujs/jquery-2.1.4.js"></script>
+<script src="xujs/jquery-weui.js"></script>
+<script src="xujs/swiper.js"></script>
+<script>
+	$(".swiper-container").swiper({
+    	loop: true, //将true改为false时 不是无缝滚动  用于无限循环切换
+    	 autoplayDisableOnInteraction: false,
+    	autoplay: 3000  //控制自动播放的时间
+  	});
+</script>
+</body>
+</html>
